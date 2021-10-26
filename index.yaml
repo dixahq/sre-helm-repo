@@ -1,0 +1,131 @@
+apiVersion: v1
+entries:
+  cert-manager:
+  - apiVersion: v1
+    appVersion: v1.2.0
+    created: "2021-10-26T14:55:01.194023+02:00"
+    description: A Helm chart for cert-manager
+    digest: c77c8ac25e59f219a67a1a30313a0e87a814474cf41155cc3e72c6a3bb04cf89
+    home: https://github.com/jetstack/cert-manager
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: james@jetstack.io
+      name: munnerz
+    name: cert-manager
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/cert-manager-v1.2.0.tgz
+    version: v1.2.0
+  elastalert:
+  - apiVersion: v1
+    appVersion: 0.2.4
+    created: "2021-10-26T14:55:01.194766+02:00"
+    description: ElastAlert is a simple framework for alerting on anomalies, spikes,
+      or other patterns of interest from data in Elasticsearch.
+    digest: 26fe1ffb1666fda8005123e517ea539bdf22f9f57089c6aefc3d59a348e31e05
+    home: https://github.com/Yelp/elastalert
+    maintainers:
+    - email: jertel@codesim.com
+      name: jertel
+    - email: o.with@sportradar.com
+      name: olemarkus
+    name: elastalert
+    sources:
+    - https://github.com/jertel/elastalert-docker
+    - https://github.com/Yelp/elastalert
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/elastalert-1.8.3.tgz
+    version: 1.8.3
+  fluentd:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 1.11.5
+    created: "2021-10-26T14:55:01.196501+02:00"
+    description: Fluentd is an open source data collector for unified logging layer
+    digest: f1b0eadd8a1d74897e7e4de4dfe8b5122c84de6d2721561cf9faab46d5ac63c3
+    home: https://github.com/bitnami/charts/tree/master/bitnami/fluentd
+    icon: https://bitnami.com/assets/stacks/fluentd/img/fluentd-stack-110x117.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: fluentd
+    sources:
+    - https://github.com/bitnami/bitnami-docker-fluentd
+    - https://www.fluentd.org/
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/fluentd-3.0.0.tgz
+    version: 3.0.0
+  grafana:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 7.1.5
+    created: "2021-10-26T14:55:01.198097+02:00"
+    description: Grafana is an open source, feature rich metrics dashboard and graph
+      editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
+    digest: 29b3b647b929e151de5c3c70a9e9d6eb36dad3372b9b754034d754f1a19bde06
+    home: https://github.com/bitnami/charts/tree/master/bitnami/grafana
+    icon: https://bitnami.com/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: grafana
+    sources:
+    - https://github.com/bitnami/bitnami-docker-grafana
+    - https://grafana.com/
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/grafana-3.4.2.tgz
+    version: 3.4.2
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 11.9.0
+    created: "2021-10-26T14:55:01.201635+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 0.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 43b704fabb06350b5582c4c9d7a7642a1a2bd4a4baa8d47392f308dda362dd55
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/postgresql-9.7.0.tgz
+    version: 9.7.0
+generated: "2021-10-26T14:55:01.18592+02:00"
