@@ -3,7 +3,7 @@ entries:
   cert-manager:
   - apiVersion: v1
     appVersion: v1.2.0
-    created: "2022-03-11T15:00:59.289312+02:00"
+    created: "2022-04-11T13:19:57.611126+02:00"
     description: A Helm chart for cert-manager
     digest: c77c8ac25e59f219a67a1a30313a0e87a814474cf41155cc3e72c6a3bb04cf89
     home: https://github.com/jetstack/cert-manager
@@ -25,7 +25,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.7.1
-    created: "2022-03-11T15:00:59.290279+02:00"
+    created: "2022-04-11T13:19:57.612272+02:00"
     description: A Helm chart for Docker Registry
     digest: 48ec8334459b9fdf0fde64c0d63face905b7967b58c775b20bd7535a9b66e220
     home: https://hub.docker.com/_/registry/
@@ -43,7 +43,7 @@ entries:
   elastalert:
   - apiVersion: v1
     appVersion: 0.2.4
-    created: "2022-03-11T15:00:59.290796+02:00"
+    created: "2022-04-11T13:19:57.6128+02:00"
     description: ElastAlert is a simple framework for alerting on anomalies, spikes,
       or other patterns of interest from data in Elasticsearch.
     digest: 26fe1ffb1666fda8005123e517ea539bdf22f9f57089c6aefc3d59a348e31e05
@@ -63,7 +63,7 @@ entries:
   elastalert2:
   - apiVersion: v1
     appVersion: 2.3.0
-    created: "2022-03-11T15:00:59.291297+02:00"
+    created: "2022-04-11T13:19:57.613293+02:00"
     description: Automated rule-based alerting for Elasticsearch
     digest: 517a37e6ed260eb955821b40c5990d8da12270b2c7cbd3b05a7ce14bfe5cb86b
     home: https://github.com/jertel/elastalert2
@@ -80,7 +80,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.11.5
-    created: "2022-03-11T15:00:59.292621+02:00"
+    created: "2022-04-11T13:19:57.61449+02:00"
     description: Fluentd is an open source data collector for unified logging layer
     digest: f1b0eadd8a1d74897e7e4de4dfe8b5122c84de6d2721561cf9faab46d5ac63c3
     home: https://github.com/bitnami/charts/tree/master/bitnami/fluentd
@@ -104,9 +104,40 @@ entries:
   grafana:
   - annotations:
       category: Analytics
+    apiVersion: v2
+    appVersion: 8.4.5
+    created: "2022-04-11T13:19:57.618574+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Grafana is an open source metric analytics and visualization suite
+      for visualizing time series data that supports various types of data sources.
+    digest: 66c97cb8e535749557199a1be1606c99ffa60e1e5d229023ed7dd7d694d7ea3a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/grafana
+    icon: https://bitnami.com/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: grafana
+    sources:
+    - https://github.com/bitnami/bitnami-docker-grafana
+    - https://grafana.com/
+    urls:
+    - https://dixahq.github.io/sre-helm-repo/grafana-7.6.27.tgz
+    version: 7.6.27
+  - annotations:
+      category: Analytics
     apiVersion: v1
     appVersion: 7.1.5
-    created: "2022-03-11T15:00:59.295377+02:00"
+    created: "2022-04-11T13:19:57.61599+02:00"
     description: Grafana is an open source, feature rich metrics dashboard and graph
       editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
     digest: 29b3b647b929e151de5c3c70a9e9d6eb36dad3372b9b754034d754f1a19bde06
@@ -132,7 +163,7 @@ entries:
       category: Database
     apiVersion: v1
     appVersion: 11.9.0
-    created: "2022-03-11T15:00:59.298413+02:00"
+    created: "2022-04-11T13:19:57.620803+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -161,4 +192,4 @@ entries:
     urls:
     - https://dixahq.github.io/sre-helm-repo/postgresql-9.7.0.tgz
     version: 9.7.0
-generated: "2022-03-11T15:00:59.282471+02:00"
+generated: "2022-04-11T13:19:57.604965+02:00"
