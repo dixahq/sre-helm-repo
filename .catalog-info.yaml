@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: sre-helm-repo
+  description: Store public Helm charts used by Dixa so that we don't need to rely on external Helm repositories.
+  annotations:
+    github.com/project-slug: dixahq/sre-helm-repo
+spec:
+  type: library
+  lifecycle: production
+  owner: dixahq-sre
